@@ -1,0 +1,33 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Build output
+out/
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# JAR files
+*.jar
+
+# Otros
+*~

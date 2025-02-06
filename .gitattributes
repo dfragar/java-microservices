@@ -1,0 +1,2 @@
+# Asegura que todos los archivos de código fuente de Java usen LF
+*.java text eol=lf
