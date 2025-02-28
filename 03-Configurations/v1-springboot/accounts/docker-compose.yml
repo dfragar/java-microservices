@@ -1,0 +1,37 @@
+services:
+  accounts:
+    image: "dfragar/accounts:s1"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bankdemo
+  loans:
+    image: "dfragar/loans:s1"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bankdemo
+  cards:
+    image: "dfragar/cards:s1"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bankdemo
+networks:
+  bankdemo:
+    driver: "bridge"
