@@ -31,3 +31,6 @@ bin/
 
 # Otros
 *~
+
+
+/docker-compose/default/.data/
